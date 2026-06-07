@@ -1,4 +1,4 @@
-package aulasteoricas.metodosimples.aula25;
+package aula25.metodosimples;
 
 public class Carro {
 	

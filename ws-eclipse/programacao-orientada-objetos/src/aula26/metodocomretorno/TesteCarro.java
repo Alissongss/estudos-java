@@ -1,4 +1,4 @@
-package aulasteoricas.metodocomretorno.aula26;
+package aula26.metodocomretorno;
 
 public class TesteCarro {
 	

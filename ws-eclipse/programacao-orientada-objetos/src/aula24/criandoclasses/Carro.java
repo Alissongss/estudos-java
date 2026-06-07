@@ -1,4 +1,4 @@
-package aulasteoricas.aula24;
+package aula24.criandoclasses;
 
 public class Carro {
 	
