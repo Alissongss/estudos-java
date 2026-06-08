@@ -8,6 +8,7 @@ public class Carro {
 	double consumoCombustivel;
 
 	double calcularCombustivel(double distancia) {
+
 		return distancia / consumoCombustivel;
 	}
 
