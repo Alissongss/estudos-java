@@ -1,15 +1,14 @@
 package exercicios.aula25a27.classesemetodos;
 
 public class LampadaLoiane {
+    String marca;
     String modelo;
     String tensao;
-    int potencia;
-    String cor;
+    String potencia;
     String tipoLuz;
     int garantiaMeses;
     String[] tipos;
     boolean tipoAbajour;
-
     boolean ligada;
 
     void ligar() {
@@ -20,20 +19,21 @@ public class LampadaLoiane {
         ligada = false;
     }
 
-    void mostrarEstado() {
+    void mostrarStatus() {
         if (ligada) {
-            System.out.println("A lâmpada está ligada.");
+            System.out.println("A lampada está ligada.");
         } else {
-            System.out.println("A lâmpada está desligada.");
+            System.out.println("A lampada está desligada.");
         }
     }
 
-    void mudarEstado() {
-        if (ligada) {
+    void mudarStatus(){
+        if (ligada){
             desligar();
         } else {
             ligar();
         }
-
     }
+
+
 }

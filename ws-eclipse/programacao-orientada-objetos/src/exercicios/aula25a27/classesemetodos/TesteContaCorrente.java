@@ -1,9 +1,13 @@
 package exercicios.aula25a27.classesemetodos;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class TesteContaCorrente {
     public static void main(String[] args) {
 
         ContaCorrente cliente = new ContaCorrente();
+        cliente.nomeBanco = "Banco do Brasil";
         cliente.numeroConta = 25041;
         cliente.digitoConta = "4";
         cliente.agenciaConta = 161;
@@ -11,16 +15,11 @@ public class TesteContaCorrente {
         cliente.nomeCliente = "Rogerio Souza";
         cliente.especial = true;
         cliente.saldoConta = 356.27;
+        cliente.limite = 10000.00;
 
-
-        double deposito = cliente.depositar();
-        cliente.saldoConta = cliente.saldoConta + deposito;
-
-        double saque = cliente.sacar();
-        cliente.saldoConta = cliente.saldoConta - saque;
-
-        System.out.println("O saldo da conta é R$ " + cliente.saldoConta);
-
+        cliente.saudarCliente();
+        cliente.entrarNoSistema();
 
     }
 }
+
